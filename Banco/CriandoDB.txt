@@ -1,0 +1,15 @@
+create database clinica;
+
+use clinica
+
+create table paciente(nome varchar(80)not null,telefone varchar(15)not null,cpf char(11) not null,
+endereco varchar (180)not null,rg varchar(12)not null,sangue varchar(5)not null,email varchar(80)not null,
+sexo varchar(20)not null,sintomas varchar(300),senha char(32)not null,remedio varchar(100),comentario varchar(300),id int not null AUTO_INCREMENT,primary key (id));
+
+
+create table medico(nome varchar(50)not null,telefone varchar(15)not null,cpf char(11) not null,id int not null AUTO_INCREMENT,endereco varchar (80)not null,
+rg varchar(12)not null,email varchar(30)not null,sexo varchar(15)not null,especialidade varchar(60)not null,senha char(32) not null,primary key (id));
+
+
+create table consulta(doenca varchar(180),data date null,hora time null,sala char (5) null,status int(3) not null,idPaciente int,idMedico int null,id int AUTO_INCREMENT,
+primary key (id),foreign key (idPaciente) references paciente (id),foreign key (idMedico) references medico (id));           

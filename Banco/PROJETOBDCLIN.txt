@@ -1,0 +1,21 @@
+					TABELAS CLINICA:
+ ______________________________________________________________________________________________________________________________
+|      	PACIENTE	|	MEDICO		|		CONSULTA		|		ANOTÇÕES
+|=======================|=======================|=======================================|======================================
+|Nome,telefone,cpf,id,	|nome,telefone,cpf,id,	|idPaciente,idMedico,doença		| #paciente requesita e muda o campo 'paciente' para o nome dele, e doença para a dele
+|endereço,rg,sangue,	|endereço,rg,email,sexo,|data, hora,sala,status,id		|e o status para 1.
+|email,sexo,		|especialidade,senha	|					|
+|sintomas,senha,remedio,|			|					|
+|Comentario		|			|					|
+|.......................................................................................|.....................................
+	12Campos		9Campos			5Campos
+
+médico pode ver todos os seus pacientes e oque eles estão sentindo e indicar remédios 
+fazer sistem de consultas pendentes - paciente requisita e médico marca. após marcar aparece nova consulta lá no paciente
+paciete diz os sintomas e médico marca a consulta
+Date_diff
+
+exemplo de update:
+UPDATE DEPARTAMENTO
+SET SALARIO = 1000
+WHERE CODIGODEP = 1
